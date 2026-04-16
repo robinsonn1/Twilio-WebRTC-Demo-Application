@@ -1,0 +1,26 @@
+{
+    "name": "conversation-relay-bedrock-customer-service-live-voice",
+    "version": "1.0.0",
+    "description": "A simple websockets application with Amazon Bedrock or the OpenAI API and Twilio ConversationRelay, triggered by a WebRTC or voice call.",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.mjs",
+        "test": "jest --forceExit --ci --reporters=default --reporters=jest-junit",
+        "lint": "eslint . --ext .js"
+    },
+    "jest-junit": {},
+    "author": "Dan Bartlett, Charlie Avila, Ben Johnstone.",
+    "license": "MIT",
+    "dependencies": {
+        "@aws-sdk/client-bedrock-runtime": "^3.778.0",        
+        "@sendgrid/mail": "^8.1.5",
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "express": "^4.21.2",
+        "file-system-db": "^2.1.0",
+        "openai": "^4.100.0",
+        "twilio": "^5.7.1",
+        "ws": "^8.0.0"
+    }
+}
